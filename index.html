@@ -97,6 +97,16 @@
             }
         }
         
+        @media only screen and (min-width: 1024px) {
+            .container {
+                width: 1000px;
+                background: red;
+                /*不加上这一句不显示,原因:container没有浮动?下面块级也可以?*/
+                overflow: hidden;
+                margin: auto;
+            }
+        }
+        
         @media only screen and (max-width:400px) {
             .letBox,
             .rightBox,
